@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | AtGlance Mannequins</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* LEFT PANEL */
+.contact-left {
+  flex: 1;
+  color: #fff;
+}
+
+.contact-left h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ffd89b, #ff8c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-info span {
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* RIGHT PANEL */
+.contact-right {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.contact-right h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2c5364;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* FORM STYLING */
+form {
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 0 6px;
+  color: #888;
+  font-size: 13px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+  top: -8px;
+  font-size: 11px;
+  color: #2c5364;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #ff8c00, #ffd89b);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c5364;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .contact-left h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-left h1 {
+    font-size: 28px;
+  }
+
+  .contact-right h2 {
+    font-size: 22px;
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+<body>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      
+      <div class="contact-left">
+        <h1>Get in Touch</h1>
+        <p>
+          We’d love to hear from you! Whether you need premium mannequins, 
+          bulk orders, or custom designs — AtGlance Mannequins is here to help.
+        </p>
+
+        <div class="contact-info">
+          <div>
+            <span>📍</span>
+            <p>AtGlance Mannequins, India</p>
+          </div>
+          <div>
+            <span>📞</span>
+            <p>
+                +91 98765 43210<br/>
+                +91 7785937077
+            </p>
+            
+          </div>
+          <div>
+            <span>✉️</span>
+            <p>info@atglancemannequins.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form>
+          <h2>Send Us a Message</h2>
+
+          <div class="input-group">
+            <input type="text" required />
+            <label>Your Name</label>
+          </div>
+
+          <div class="input-group">
+            <input type="email" required />
+            <label>Email Address</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" required />
+            <label>Subject</label>
+          </div>
+
+          <div class="input-group">
+            <textarea required></textarea>
+            <label>Your Message</label>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
