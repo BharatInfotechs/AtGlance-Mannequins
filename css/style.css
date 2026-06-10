@@ -2283,18 +2283,3 @@ section {
 }
 
 
-#wishlistBtn{
-
-    display:flex !important;
-
-    align-items:center !important;
-
-    justify-content:center !important;
-
-    visibility:visible !important;
-
-    opacity:1 !important;
-
-    background:red !important;
-
-}
